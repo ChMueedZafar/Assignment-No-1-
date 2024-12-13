@@ -786,6 +786,7 @@ footer {
 footer .container {
   max-width: 1500px;
   min-width: 1500px;
+  height: 160px;
   display: flex;
   flex-direction: column;
 }
