@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm install
 COPY . .                        
 EXPOSE 4000
-CMD ["node", "main.jsx"]
+CMD ["node", "App.jsx"]
