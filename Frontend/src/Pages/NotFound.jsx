@@ -1,10 +1,26 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
-  )
-}
+    <>
+      <section className="notFound">
+        <div className="container">
+          <img src="/notFound.svg" alt="notFound" />
+          <h1>LOOKS LIKE YOU ARE LOST</h1>
+          <p>We can&apos;t seem to find you the page you are looking for</p>
+          <Link to={"/"}>
+            Back to Home{" "}
+            <span>
+              <HiOutlineArrowNarrowRight />
+            </span>
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+};
 
-export default NotFound
+export default NotFound;
